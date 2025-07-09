@@ -1,3 +1,5 @@
+*Notice*: This crate is deprecated. Please use https://github.com/tweedegolf/w25
+
 # W25Q32JV Flash driver
 
 [![crates.io](https://img.shields.io/crates/v/w25q32jv.svg)](https://crates.io/crates/w25q32jv) [![Documentation](https://docs.rs/w25q32jv/badge.svg)](https://docs.rs/w25q32jv)
