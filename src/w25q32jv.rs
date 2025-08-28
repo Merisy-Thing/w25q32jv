@@ -92,7 +92,7 @@ where
             .transfer_in_place(&mut buf)
             .map_err(Error::SpiError)?;
 
-        Ok(TryFrom::try_from(&buf[5..])?)
+        Ok(TryFrom::try_from(&buf[5..]).unwrap())
     }
 
     /// Reset the chip
