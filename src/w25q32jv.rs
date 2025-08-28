@@ -92,7 +92,7 @@ where
             .transfer_in_place(&mut buf)
             .map_err(Error::SpiError)?;
 
-        Ok(TryFrom::try_from(&buf[5..]).unwrap())
+        Ok(TryFrom::try_from(&buf[5..])?)
     }
 
     /// Reset the chip
@@ -243,7 +243,7 @@ where
         let end_sector = end_address / SECTOR_SIZE;
 
         for sector in start_sector..end_sector {
-            self.erase_sector(sector).unwrap();
+            self.erase_sector(sector)?;
         }
 
         Ok(())
